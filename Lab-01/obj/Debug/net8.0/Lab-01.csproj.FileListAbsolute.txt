@@ -1,0 +1,15 @@
+D:\Github\LapTrinh.Net\Lab-01\bin\Debug\net8.0\Lab-01.exe
+D:\Github\LapTrinh.Net\Lab-01\bin\Debug\net8.0\Lab-01.deps.json
+D:\Github\LapTrinh.Net\Lab-01\bin\Debug\net8.0\Lab-01.runtimeconfig.json
+D:\Github\LapTrinh.Net\Lab-01\bin\Debug\net8.0\Lab-01.dll
+D:\Github\LapTrinh.Net\Lab-01\bin\Debug\net8.0\Lab-01.pdb
+D:\Github\LapTrinh.Net\Lab-01\obj\Debug\net8.0\Lab-01.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\LapTrinh.Net\Lab-01\obj\Debug\net8.0\Lab-01.AssemblyInfoInputs.cache
+D:\Github\LapTrinh.Net\Lab-01\obj\Debug\net8.0\Lab-01.AssemblyInfo.cs
+D:\Github\LapTrinh.Net\Lab-01\obj\Debug\net8.0\Lab-01.csproj.CoreCompileInputs.cache
+D:\Github\LapTrinh.Net\Lab-01\obj\Debug\net8.0\Lab-01.sourcelink.json
+D:\Github\LapTrinh.Net\Lab-01\obj\Debug\net8.0\Lab-01.dll
+D:\Github\LapTrinh.Net\Lab-01\obj\Debug\net8.0\refint\Lab-01.dll
+D:\Github\LapTrinh.Net\Lab-01\obj\Debug\net8.0\Lab-01.pdb
+D:\Github\LapTrinh.Net\Lab-01\obj\Debug\net8.0\Lab-01.genruntimeconfig.cache
+D:\Github\LapTrinh.Net\Lab-01\obj\Debug\net8.0\ref\Lab-01.dll
