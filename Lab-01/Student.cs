@@ -88,7 +88,7 @@ namespace Lab_01
         // Phuong thuc nhap mot sinh vien
         private static Student InputOneStudent(int index)
         {
-            Console.WriteLine($"Nhap thong tin sinh vien thu {0}", i);
+            Console.WriteLine($"Nhap thong tin sinh vien thu {0}", index);
             Student st = new Student();
             st.InputData();
             return st;
