@@ -62,41 +62,71 @@ namespace Lab_01
         }
 
         // Phuong thuc hien thi du lieu
-        public void show()
+        public void Display()
         {
             Console.WriteLine("MSSV:{0}", this.SID);
             Console.WriteLine("Ten SV:{0}", this.TenSV);
             Console.WriteLine("Khoa:{0}", this.Khoa);
             Console.WriteLine("Diem TB:{0}", this.DiemTB);
         }
+
+        public void InputData()
+        {
+            Console.Write("Nhap MaSV: ");
+            StudentID = int.Parse((string)Console.ReadLine());
+            Console.Write("Ho ten SV:");
+            Name = Console.ReadLine();
+            Console.Write("Nhap khoa:");
+            Faculty = Console.ReadLine();
+            Console.Write("Nhap Diem TB:");
+            Mark = float.Parse(Console.ReadLine());
+        }
     }
 
     class Tester
     {
+        // Phuong thuc nhap mot sinh vien
+        private static Student InputOneStudent(int index)
+        {
+            Console.WriteLine($"Nhap thong tin sinh vien thu {0}", i);
+            Student st = new Student();
+            st.InputData();
+            return st;
+        }
+
+        // Phương thức nhập danh sách sinh viên
+        private static Student[] InputStudentList(int n)
+        {
+            Student[] students = new Student[n];
+            for (int i = 0; i < n; i++)
+            {
+                students[i] = Tester.InputOneStudent(i);
+            }
+            return students;
+        }
+
+        // Phương thức xuất danh sách sinh viên
+        private static void DisplayStudentList(Student[] students)
+        {
+            Console.WriteLine("\n\n====== DANH SÁCH SINH VIÊN ======");
+
+            for (int i = 0; i < students.Length; i++)
+            {
+                Console.WriteLine($"\n--- Sinh viên thứ {i + 1} ---");
+                students[i].Display();
+            }
+        }
+
         public static void Main(string[] args)
         {
-            Student[] DSSV;
             int n;
             Console.Write("Nhap vao so luong SV:");
             n = int.Parse(Console.ReadLine());
-            DSSV = new Student[n];
-            Console.WriteLine("\n ==== NHAP DS SINH VIEN ====");
-            for (int i = 0; i < n; i++)
-            {
-                DSSV[i] = new Student();
-                Console.Write("Nhap MaSV {0}: ", i + 1);
-                DSSV[i].StudentID = int.Parse((string)Console.ReadLine());
-                Console.Write("Ho ten SV:");
-                DSSV[i].Name = Console.ReadLine();
-                Console.Write("Nhap khoa:");
-                DSSV[i].Faculty = Console.ReadLine();
-                Console.Write("Nhap Diem TB:");
-                DSSV[i].Mark = float.Parse(Console.ReadLine());
-            }
-            // Xuat DS Sinh Vien
-            Console.WriteLine("\n ==== XUAT DS SINH VIEN ====");
-            foreach(Student sv in DSSV)
-                sv.show();
+
+            // Gọi phương thức
+            var DSSV = InputStudentList(n);
+            DisplayStudentList(DSSV);
+
             Console.ReadLine();
         }
     }
