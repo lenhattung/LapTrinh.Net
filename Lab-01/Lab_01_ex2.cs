@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab_01
+namespace Lab_01_ex2
 {
     class Student
     {
@@ -116,6 +116,7 @@ namespace Lab_01
                 students[i].Display();
             }
         }
+        /*
 
         public static void Main(string[] args)
         {
@@ -129,5 +130,9 @@ namespace Lab_01
 
             Console.ReadLine();
         }
+
+        */
     }
+
+
 }

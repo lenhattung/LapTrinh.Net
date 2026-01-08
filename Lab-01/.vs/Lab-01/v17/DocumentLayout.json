@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "D:\\Github\\LapTrinh.Net\\Lab-01\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F4887C1C-9722-4636-911E-59CDD9BB158D}|Lab-01.csproj|d:\\github\\laptrinh.net\\lab-01\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4887C1C-9722-4636-911E-59CDD9BB158D}|Lab-01.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F4887C1C-9722-4636-911E-59CDD9BB158D}|Lab-01.csproj|d:\\github\\laptrinh.net\\lab-01\\lab_01_ex3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4887C1C-9722-4636-911E-59CDD9BB158D}|Lab-01.csproj|solutionrelative:lab_01_ex3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4887C1C-9722-4636-911E-59CDD9BB158D}|Lab-01.csproj|d:\\github\\laptrinh.net\\lab-01\\lab_01_ex2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4887C1C-9722-4636-911E-59CDD9BB158D}|Lab-01.csproj|solutionrelative:lab_01_ex2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4887C1C-9722-4636-911E-59CDD9BB158D}|Lab-01.csproj|d:\\github\\laptrinh.net\\lab-01\\lab_01_ex1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4887C1C-9722-4636-911E-59CDD9BB158D}|Lab-01.csproj|solutionrelative:lab_01_ex1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,12 +31,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Student.cs",
-              "DocumentMoniker": "D:\\Github\\LapTrinh.Net\\Lab-01\\Student.cs",
-              "RelativeDocumentMoniker": "Student.cs",
-              "ToolTip": "D:\\Github\\LapTrinh.Net\\Lab-01\\Student.cs",
-              "RelativeToolTip": "Student.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAD4v2gAAAAbAAAAAAAAAA==",
+              "Title": "Lab_01_ex3.cs",
+              "DocumentMoniker": "D:\\Github\\LapTrinh.Net\\Lab-01\\Lab_01_ex3.cs",
+              "RelativeDocumentMoniker": "Lab_01_ex3.cs",
+              "ToolTip": "D:\\Github\\LapTrinh.Net\\Lab-01\\Lab_01_ex3.cs",
+              "RelativeToolTip": "Lab_01_ex3.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAQwI0AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T11:54:43.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Lab_01_ex1.cs",
+              "DocumentMoniker": "D:\\Github\\LapTrinh.Net\\Lab-01\\Lab_01_ex1.cs",
+              "RelativeDocumentMoniker": "Lab_01_ex1.cs",
+              "ToolTip": "D:\\Github\\LapTrinh.Net\\Lab-01\\Lab_01_ex1.cs",
+              "RelativeToolTip": "Lab_01_ex1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T11:50:59.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Lab_01_ex2.cs",
+              "DocumentMoniker": "D:\\Github\\LapTrinh.Net\\Lab-01\\Lab_01_ex2.cs",
+              "RelativeDocumentMoniker": "Lab_01_ex2.cs",
+              "ToolTip": "D:\\Github\\LapTrinh.Net\\Lab-01\\Lab_01_ex2.cs",
+              "RelativeToolTip": "Lab_01_ex2.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAzwIUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-06T12:23:15.445Z",
               "EditorCaption": ""
