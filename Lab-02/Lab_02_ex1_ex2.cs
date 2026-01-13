@@ -213,6 +213,7 @@ namespace Lab_02_ex1
 
     class Program
     {
+        /*
         static void Main(string[] args)
         {
             BookList bookList = new BookList();
@@ -239,5 +240,6 @@ namespace Lab_02_ex1
 
             Console.ReadLine();
         }
+        */
     }
 }
