@@ -16,3 +16,4 @@ D:\Github\LapTrinh.Net\Lab-03\obj\Debug\net8.0-windows\Lab-03.genruntimeconfig.c
 D:\Github\LapTrinh.Net\Lab-03\obj\Debug\net8.0-windows\ref\Lab-03.dll
 D:\Github\LapTrinh.Net\Lab-03\obj\Debug\net8.0-windows\Lab_03.FormCalculator.resources
 D:\Github\LapTrinh.Net\Lab-03\obj\Debug\net8.0-windows\Lab_03.FormUocBoi.resources
+D:\Github\LapTrinh.Net\Lab-03\obj\Debug\net8.0-windows\Lab_03.FormCalculatorFull.resources
