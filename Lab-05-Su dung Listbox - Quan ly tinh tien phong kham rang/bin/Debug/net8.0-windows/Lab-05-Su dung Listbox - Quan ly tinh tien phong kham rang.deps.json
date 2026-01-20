@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Lab-05-Su dung Listbox - Quan ly tinh tien phong kham rang/1.0.0": {
+        "runtime": {
+          "Lab-05-Su dung Listbox - Quan ly tinh tien phong kham rang.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lab-05-Su dung Listbox - Quan ly tinh tien phong kham rang/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

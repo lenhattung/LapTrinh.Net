@@ -1,0 +1,18 @@
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\bin\Debug\net8.0-windows\Lab-04-Su Dung Cong Cu Treeview.exe
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\bin\Debug\net8.0-windows\Lab-04-Su Dung Cong Cu Treeview.deps.json
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\bin\Debug\net8.0-windows\Lab-04-Su Dung Cong Cu Treeview.runtimeconfig.json
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\bin\Debug\net8.0-windows\Lab-04-Su Dung Cong Cu Treeview.dll
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\bin\Debug\net8.0-windows\Lab-04-Su Dung Cong Cu Treeview.pdb
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\obj\Debug\net8.0-windows\Lab_04_Su_Dung_Cong_Cu_Treeview.Form1.resources
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\obj\Debug\net8.0-windows\Lab-04-Su Dung Cong Cu Treeview.csproj.GenerateResource.cache
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\obj\Debug\net8.0-windows\Lab-04-Su Dung Cong Cu Treeview.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\obj\Debug\net8.0-windows\Lab-04-Su Dung Cong Cu Treeview.AssemblyInfoInputs.cache
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\obj\Debug\net8.0-windows\Lab-04-Su Dung Cong Cu Treeview.AssemblyInfo.cs
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\obj\Debug\net8.0-windows\Lab-04-Su Dung Cong Cu Treeview.csproj.CoreCompileInputs.cache
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\obj\Debug\net8.0-windows\Lab-04-Su Dung Cong Cu Treeview.sourcelink.json
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\obj\Debug\net8.0-windows\Lab-04-Su Dung Cong Cu Treeview.dll
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\obj\Debug\net8.0-windows\refint\Lab-04-Su Dung Cong Cu Treeview.dll
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\obj\Debug\net8.0-windows\Lab-04-Su Dung Cong Cu Treeview.pdb
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\obj\Debug\net8.0-windows\Lab-04-Su Dung Cong Cu Treeview.genruntimeconfig.cache
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\obj\Debug\net8.0-windows\ref\Lab-04-Su Dung Cong Cu Treeview.dll
+D:\Github\LapTrinh.Net\Lab-04-Su Dung Cong Cu Treeview\obj\Debug\net8.0-windows\Lab_04_Su_Dung_Cong_Cu_Treeview.Properties.Resources.resources
