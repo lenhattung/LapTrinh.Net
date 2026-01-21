@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab-05-Su dung Listbox - Quan ly tinh tien phong kham rang")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbaced390ee2042fdd592bb91b361b2bbecded19")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65669d08ef8f28b483615937b0312c25a5c54f55")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab-05-Su dung Listbox - Quan ly tinh tien phong kham rang")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lab-05-Su dung Listbox - Quan ly tinh tien phong kham rang")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
