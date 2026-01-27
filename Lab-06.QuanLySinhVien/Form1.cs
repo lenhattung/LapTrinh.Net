@@ -37,9 +37,43 @@ namespace Lab_06.QuanLySinhVien
             return true;
         }
 
+        private void tim(ListView lv, string text)
+        {
+            text = text.ToUpper();
+            for (int i = 0; i < lv.Items.Count; i++)
+            {
+                string maSV = lv.Items[i].SubItems[1].Text.ToUpper();
+                string hoTen = lv.Items[i].SubItems[2].Text.ToUpper();
+                if (maSV.Contains(text) || hoTen.Contains(text))
+                {
+                    lv.Items[i].Selected = true;
+                    lv.Items[i].EnsureVisible();
+                    lv.Items[i].Focused = true;
+                }
+                else
+                {
+                    lv.Items[i].Selected = false;
+                }
+
+            }
+        }
+
+        private void thucHienTim()
+        {
+            tim(lvDanhSachSV, txtTimKiem.Text);
+            txtTimKiem.SelectAll();
+            txtTimKiem.Focus();
+        }
+        private void txtTimKiem_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((Keys)e.KeyChar == Keys.Enter)
+            {
+                thucHienTim();
+            }
+        }
         private void btSearch_Click(object sender, EventArgs e)
         {
-
+            thucHienTim();
         }
 
         private void btLuu_Click(object sender, EventArgs e)
@@ -88,9 +122,99 @@ namespace Lab_06.QuanLySinhVien
 
         private void danhSoThuTu(ListView lv)
         {
-            for(int i=0; i < lv.Items.Count; i++)
+            for (int i = 0; i < lv.Items.Count; i++)
             {
                 lv.Items[i].Text = (i + 1).ToString();
+            }
+        }
+
+        private void btClose_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Bạn có thực sự muốn thoát không?", "Xác nhận",
+                                   MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (dr == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            for (int i = 1; i <= 5; i++)
+            {
+                ListViewItem li = new ListViewItem(i.ToString());
+                li.SubItems.Add("SV" + i);
+                li.SubItems.Add("Nguyễn Văn " + i);
+
+                lvDanhSachSV.Items.Add(li);
+
+            }
+        }
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btChon1_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            while (i < lvDanhSachSV.Items.Count)
+            {
+                if (lvDanhSachSV.Items[i].Selected == true)
+                {
+                    ListViewItem li = lvDanhSachSV.Items[i];
+
+                    lvDanhSachSV.Items.RemoveAt(i);
+                    lvDachon.Items.Add(li);
+                }
+                else
+                {
+                    i++;
+                }
+                danhSoThuTu(lvDanhSachSV);
+            }
+        }
+
+        private void btTrave1_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            while (i < lvDachon.Items.Count)
+            {
+                if (lvDachon.Items[i].Selected == true)
+                {
+                    ListViewItem li = lvDachon.Items[i];
+
+                    lvDachon.Items.RemoveAt(i);
+                    lvDanhSachSV.Items.Add(li);
+                }
+                else
+                {
+                    i++;
+                }
+                danhSoThuTu(lvDachon);
+            }
+        }
+
+        private void btChonDS_Click(object sender, EventArgs e)
+        {
+            while (lvDanhSachSV.Items.Count > 0)
+            {
+                ListViewItem li = lvDanhSachSV.Items[0];
+
+                lvDanhSachSV.Items.RemoveAt(0);
+                lvDachon.Items.Add(li);
+            }
+        }
+
+        private void btTraveDS_Click(object sender, EventArgs e)
+        {
+            while (lvDachon.Items.Count > 0)
+            {
+                ListViewItem li = lvDachon.Items[0];
+
+                lvDachon.Items.RemoveAt(0);
+                lvDanhSachSV.Items.Add(li);
             }
         }
     }

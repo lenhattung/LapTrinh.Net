@@ -113,6 +113,7 @@
             btClose.TabIndex = 6;
             btClose.Text = "Thoát";
             btClose.UseVisualStyleBackColor = true;
+            btClose.Click += btClose_Click;
             // 
             // label3
             // 
@@ -139,6 +140,8 @@
             txtTimKiem.Name = "txtTimKiem";
             txtTimKiem.Size = new Size(200, 27);
             txtTimKiem.TabIndex = 10;
+            txtTimKiem.TextChanged += txtTimKiem_TextChanged;
+            txtTimKiem.KeyPress += txtTimKiem_KeyPress;
             // 
             // label4
             // 
@@ -157,6 +160,7 @@
             btChon1.TabIndex = 14;
             btChon1.Text = ">";
             btChon1.UseVisualStyleBackColor = true;
+            btChon1.Click += btChon1_Click;
             // 
             // btTrave1
             // 
@@ -166,6 +170,7 @@
             btTrave1.TabIndex = 15;
             btTrave1.Text = "<";
             btTrave1.UseVisualStyleBackColor = true;
+            btTrave1.Click += btTrave1_Click;
             // 
             // btTraveDS
             // 
@@ -175,6 +180,7 @@
             btTraveDS.TabIndex = 17;
             btTraveDS.Text = "<<";
             btTraveDS.UseVisualStyleBackColor = true;
+            btTraveDS.Click += btTraveDS_Click;
             // 
             // btChonDS
             // 
@@ -184,6 +190,7 @@
             btChonDS.TabIndex = 16;
             btChonDS.Text = ">>";
             btChonDS.UseVisualStyleBackColor = true;
+            btChonDS.Click += btChonDS_Click;
             // 
             // lvDanhSachSV
             // 
@@ -253,6 +260,7 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "Quản lý sinh viên";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
