@@ -1,0 +1,17 @@
+D:\Github\LapTrinh.Net\Lab-06.QuanLySinhVien\bin\Debug\net8.0-windows\Lab-06.QuanLySinhVien.exe
+D:\Github\LapTrinh.Net\Lab-06.QuanLySinhVien\bin\Debug\net8.0-windows\Lab-06.QuanLySinhVien.deps.json
+D:\Github\LapTrinh.Net\Lab-06.QuanLySinhVien\bin\Debug\net8.0-windows\Lab-06.QuanLySinhVien.runtimeconfig.json
+D:\Github\LapTrinh.Net\Lab-06.QuanLySinhVien\bin\Debug\net8.0-windows\Lab-06.QuanLySinhVien.dll
+D:\Github\LapTrinh.Net\Lab-06.QuanLySinhVien\bin\Debug\net8.0-windows\Lab-06.QuanLySinhVien.pdb
+D:\Github\LapTrinh.Net\Lab-06.QuanLySinhVien\obj\Debug\net8.0-windows\Lab_06.QuanLySinhVien.Form1.resources
+D:\Github\LapTrinh.Net\Lab-06.QuanLySinhVien\obj\Debug\net8.0-windows\Lab-06.QuanLySinhVien.csproj.GenerateResource.cache
+D:\Github\LapTrinh.Net\Lab-06.QuanLySinhVien\obj\Debug\net8.0-windows\Lab-06.QuanLySinhVien.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\LapTrinh.Net\Lab-06.QuanLySinhVien\obj\Debug\net8.0-windows\Lab-06.QuanLySinhVien.AssemblyInfoInputs.cache
+D:\Github\LapTrinh.Net\Lab-06.QuanLySinhVien\obj\Debug\net8.0-windows\Lab-06.QuanLySinhVien.AssemblyInfo.cs
+D:\Github\LapTrinh.Net\Lab-06.QuanLySinhVien\obj\Debug\net8.0-windows\Lab-06.QuanLySinhVien.csproj.CoreCompileInputs.cache
+D:\Github\LapTrinh.Net\Lab-06.QuanLySinhVien\obj\Debug\net8.0-windows\Lab-06.QuanLySinhVien.sourcelink.json
+D:\Github\LapTrinh.Net\Lab-06.QuanLySinhVien\obj\Debug\net8.0-windows\Lab-06.QuanLySinhVien.dll
+D:\Github\LapTrinh.Net\Lab-06.QuanLySinhVien\obj\Debug\net8.0-windows\refint\Lab-06.QuanLySinhVien.dll
+D:\Github\LapTrinh.Net\Lab-06.QuanLySinhVien\obj\Debug\net8.0-windows\Lab-06.QuanLySinhVien.pdb
+D:\Github\LapTrinh.Net\Lab-06.QuanLySinhVien\obj\Debug\net8.0-windows\Lab-06.QuanLySinhVien.genruntimeconfig.cache
+D:\Github\LapTrinh.Net\Lab-06.QuanLySinhVien\obj\Debug\net8.0-windows\ref\Lab-06.QuanLySinhVien.dll
