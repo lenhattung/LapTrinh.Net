@@ -1,0 +1,17 @@
+D:\Github\LapTrinh.Net\Lab-07. Quản lý nhân viên sử dụng ListView\bin\Debug\net8.0-windows\Lab-07. Quản lý nhân viên sử dụng ListView.exe
+D:\Github\LapTrinh.Net\Lab-07. Quản lý nhân viên sử dụng ListView\bin\Debug\net8.0-windows\Lab-07. Quản lý nhân viên sử dụng ListView.deps.json
+D:\Github\LapTrinh.Net\Lab-07. Quản lý nhân viên sử dụng ListView\bin\Debug\net8.0-windows\Lab-07. Quản lý nhân viên sử dụng ListView.runtimeconfig.json
+D:\Github\LapTrinh.Net\Lab-07. Quản lý nhân viên sử dụng ListView\bin\Debug\net8.0-windows\Lab-07. Quản lý nhân viên sử dụng ListView.dll
+D:\Github\LapTrinh.Net\Lab-07. Quản lý nhân viên sử dụng ListView\bin\Debug\net8.0-windows\Lab-07. Quản lý nhân viên sử dụng ListView.pdb
+D:\Github\LapTrinh.Net\Lab-07. Quản lý nhân viên sử dụng ListView\obj\Debug\net8.0-windows\Lab_07._Quản_lý_nhân_viên_sử_dụng_ListView.Form1.resources
+D:\Github\LapTrinh.Net\Lab-07. Quản lý nhân viên sử dụng ListView\obj\Debug\net8.0-windows\Lab-07. Quản lý nhân viên sử dụng ListView.csproj.GenerateResource.cache
+D:\Github\LapTrinh.Net\Lab-07. Quản lý nhân viên sử dụng ListView\obj\Debug\net8.0-windows\Lab-07. Quản lý nhân viên sử dụng ListView.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\LapTrinh.Net\Lab-07. Quản lý nhân viên sử dụng ListView\obj\Debug\net8.0-windows\Lab-07. Quản lý nhân viên sử dụng ListView.AssemblyInfoInputs.cache
+D:\Github\LapTrinh.Net\Lab-07. Quản lý nhân viên sử dụng ListView\obj\Debug\net8.0-windows\Lab-07. Quản lý nhân viên sử dụng ListView.AssemblyInfo.cs
+D:\Github\LapTrinh.Net\Lab-07. Quản lý nhân viên sử dụng ListView\obj\Debug\net8.0-windows\Lab-07. Quản lý nhân viên sử dụng ListView.csproj.CoreCompileInputs.cache
+D:\Github\LapTrinh.Net\Lab-07. Quản lý nhân viên sử dụng ListView\obj\Debug\net8.0-windows\Lab-07. Quản lý nhân viên sử dụng ListView.sourcelink.json
+D:\Github\LapTrinh.Net\Lab-07. Quản lý nhân viên sử dụng ListView\obj\Debug\net8.0-windows\Lab-07. Quản lý nhân viên sử dụng ListView.dll
+D:\Github\LapTrinh.Net\Lab-07. Quản lý nhân viên sử dụng ListView\obj\Debug\net8.0-windows\refint\Lab-07. Quản lý nhân viên sử dụng ListView.dll
+D:\Github\LapTrinh.Net\Lab-07. Quản lý nhân viên sử dụng ListView\obj\Debug\net8.0-windows\Lab-07. Quản lý nhân viên sử dụng ListView.pdb
+D:\Github\LapTrinh.Net\Lab-07. Quản lý nhân viên sử dụng ListView\obj\Debug\net8.0-windows\Lab-07. Quản lý nhân viên sử dụng ListView.genruntimeconfig.cache
+D:\Github\LapTrinh.Net\Lab-07. Quản lý nhân viên sử dụng ListView\obj\Debug\net8.0-windows\ref\Lab-07. Quản lý nhân viên sử dụng ListView.dll
