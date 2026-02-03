@@ -40,12 +40,12 @@
             label5 = new Label();
             txtDiaChi = new TextBox();
             label6 = new Label();
-            txtMaKhoa = new TextBox();
             label7 = new Label();
             dtp_NgaySinh = new DateTimePicker();
             gbGioiTinh = new GroupBox();
             radioButton_Nu = new RadioButton();
             radioButton_Nam = new RadioButton();
+            comboBox_MaKhoa = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewSinhVien).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             gbGioiTinh.SuspendLayout();
@@ -134,21 +134,14 @@
             label6.TabIndex = 9;
             label6.Text = "Địa chỉ";
             // 
-            // txtMaKhoa
-            // 
-            txtMaKhoa.Location = new Point(434, 110);
-            txtMaKhoa.Name = "txtMaKhoa";
-            txtMaKhoa.Size = new Size(218, 27);
-            txtMaKhoa.TabIndex = 14;
-            // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Location = new Point(355, 114);
             label7.Name = "label7";
-            label7.Size = new Size(66, 20);
+            label7.Size = new Size(43, 20);
             label7.TabIndex = 13;
-            label7.Text = "Mã khoa";
+            label7.Text = "Khoa";
             // 
             // dtp_NgaySinh
             // 
@@ -194,14 +187,22 @@
             radioButton_Nam.UseVisualStyleBackColor = true;
             radioButton_Nam.CheckedChanged += radioButton_Nam_CheckedChanged;
             // 
+            // comboBox_MaKhoa
+            // 
+            comboBox_MaKhoa.FormattingEnabled = true;
+            comboBox_MaKhoa.Location = new Point(438, 110);
+            comboBox_MaKhoa.Name = "comboBox_MaKhoa";
+            comboBox_MaKhoa.Size = new Size(214, 28);
+            comboBox_MaKhoa.TabIndex = 17;
+            // 
             // frmSinhVien
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(905, 556);
+            Controls.Add(comboBox_MaKhoa);
             Controls.Add(gbGioiTinh);
             Controls.Add(dtp_NgaySinh);
-            Controls.Add(txtMaKhoa);
             Controls.Add(label7);
             Controls.Add(txtSoDienThoai);
             Controls.Add(label5);
@@ -237,11 +238,11 @@
         private Label label5;
         private TextBox txtDiaChi;
         private Label label6;
-        private TextBox txtMaKhoa;
         private Label label7;
         private DateTimePicker dtp_NgaySinh;
         private GroupBox gbGioiTinh;
         private RadioButton radioButton_Nu;
         private RadioButton radioButton_Nam;
+        private ComboBox comboBox_MaKhoa;
     }
 }

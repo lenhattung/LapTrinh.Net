@@ -16,7 +16,8 @@ namespace Lab_08_StudnetMS
         // Thêm TrustServerCertificate=True; và Encrypt=False;
         SqlConnection conn = new SqlConnection("Server=.;Database=StudentDB;Trusted_Connection=True;TrustServerCertificate=True;Encrypt=False;");
         SqlDataAdapter da;
-        DataTable dt = new DataTable();
+        DataTable dtSinhVien = new DataTable();
+        DataTable dtKhoa = new DataTable();
         BindingSource bs = new BindingSource();
 
         public frmSinhVien()
@@ -28,10 +29,14 @@ namespace Lab_08_StudnetMS
         {
             // 1. Đọc dữ liệu từ SQL
             da = new SqlDataAdapter("SELECT * FROM SinhVien", conn);
-            da.Fill(dt);
+            da.Fill(dtSinhVien);
+
+            // Lấy dữ liệu mã khoa
+            SqlDataAdapter daKhoa = new SqlDataAdapter("SELECT MaKhoa, TenKhoa FROM Khoa", conn);
+            daKhoa.Fill(dtKhoa);
 
             // 2. Gán dữ liệu vào BingdingSource (vật trung gian)
-            bs.DataSource = dt;
+            bs.DataSource = dtSinhVien;
 
             // 3. Liên kết BindingSource với DataGridView và Navigator
             dataGridViewSinhVien.DataSource = bs;
@@ -43,7 +48,10 @@ namespace Lab_08_StudnetMS
             radioButton_Nam.DataBindings.Add("Checked", bs, "GioiTinh", true, DataSourceUpdateMode.OnPropertyChanged);
             txtDiaChi.DataBindings.Add("Text", bs, "DiaChi");
             txtSoDienThoai.DataBindings.Add("Text", bs, "DienThoai");
-            txtMaKhoa.DataBindings.Add("Text", bs, "MaKhoa");
+            // Thiết lập combobox
+            comboBox_MaKhoa.DataSource = dtKhoa;
+            comboBox_MaKhoa.DisplayMember = "TenKhoa";
+            comboBox_MaKhoa.ValueMember = "MaKhoa";
 
             bs.PositionChanged += (s, e) =>
             {
