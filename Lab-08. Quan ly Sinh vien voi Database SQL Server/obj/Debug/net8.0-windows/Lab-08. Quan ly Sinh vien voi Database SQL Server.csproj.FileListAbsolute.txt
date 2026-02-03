@@ -1,0 +1,67 @@
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Lab-08. Quan ly Sinh vien voi Database SQL Server.exe
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Lab-08. Quan ly Sinh vien voi Database SQL Server.deps.json
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Lab-08. Quan ly Sinh vien voi Database SQL Server.runtimeconfig.json
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Lab-08. Quan ly Sinh vien voi Database SQL Server.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Lab-08. Quan ly Sinh vien voi Database SQL Server.pdb
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Azure.Core.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Azure.Identity.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\System.ClientModel.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\System.Memory.Data.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\obj\Debug\net8.0-windows\Lab-08. Quan ly Sinh vien voi Database SQL Server.csproj.AssemblyReference.cache
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\obj\Debug\net8.0-windows\Lab-08. Quan ly Sinh vien voi Database SQL Server.csproj.GenerateResource.cache
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\obj\Debug\net8.0-windows\Lab-08. Quan ly Sinh vien voi Database SQL Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\obj\Debug\net8.0-windows\Lab-08. Quan ly Sinh vien voi Database SQL Server.AssemblyInfoInputs.cache
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\obj\Debug\net8.0-windows\Lab-08. Quan ly Sinh vien voi Database SQL Server.AssemblyInfo.cs
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\obj\Debug\net8.0-windows\Lab-08. Quan ly Sinh vien voi Database SQL Server.csproj.CoreCompileInputs.cache
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\obj\Debug\net8.0-windows\Lab-08. Quan ly Sinh vien voi Database SQL Server.sourcelink.json
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\obj\Debug\net8.0-windows\Lab-08. .41039359.Up2Date
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\obj\Debug\net8.0-windows\Lab-08. Quan ly Sinh vien voi Database SQL Server.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\obj\Debug\net8.0-windows\refint\Lab-08. Quan ly Sinh vien voi Database SQL Server.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\obj\Debug\net8.0-windows\Lab-08. Quan ly Sinh vien voi Database SQL Server.pdb
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\obj\Debug\net8.0-windows\Lab-08. Quan ly Sinh vien voi Database SQL Server.genruntimeconfig.cache
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\obj\Debug\net8.0-windows\ref\Lab-08. Quan ly Sinh vien voi Database SQL Server.dll
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\obj\Debug\net8.0-windows\Lab_08._Quan_ly_Sinh_vien_voi_Database_SQL_Server.FormMonHoc.resources
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\obj\Debug\net8.0-windows\Lab_08._Quan_ly_Sinh_vien_voi_Database_SQL_Server.FormSinhVien.resources
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\obj\Debug\net8.0-windows\Lab_08._Quan_ly_Sinh_vien_voi_Database_SQL_Server.MainForm.resources
+D:\Github\LapTrinh.Net\Lab-08. Quan ly Sinh vien voi Database SQL Server\obj\Debug\net8.0-windows\Lab_08._Quan_ly_Sinh_vien_voi_Database_SQL_Server.Properties.Resources.resources

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab-08. Quan ly Sinh vien voi Database SQL Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9b729efef6b90a2ecaad6f31d062a25b2c8396c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5cffffc18fabdce6630c3edef68ea416ef974b14")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab-08. Quan ly Sinh vien voi Database SQL Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lab-08. Quan ly Sinh vien voi Database SQL Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
