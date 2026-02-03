@@ -55,13 +55,17 @@ namespace Lab_08_StudnetMS
 
             bs.PositionChanged += (s, e) =>
             {
-                DataRowView currentRow = (DataRowView)bs.Current;
-                // Kiểm tra nếu cột GioiTinh là DBNull (thường gặp khi AddNew) thì mặc định là true (Nam)
-                object val = currentRow["GioiTinh"];
-                bool gioiTinh = (val == DBNull.Value) ? true : (bool)val;
+                if (bs.Current != null)
+                {
+                    DataRowView currentRow = (DataRowView)bs.Current;
 
-                radioButton_Nam.Checked = gioiTinh;
-                radioButton_Nu.Checked = !gioiTinh;
+                    // Kiểm tra nếu giá trị là DBNull (dòng mới chưa có dữ liệu) thì mặc định là true
+                    object val = currentRow["GioiTinh"];
+                    bool gioiTinh = (val == DBNull.Value) ? true : (bool)val;
+
+                    radioButton_Nam.Checked = gioiTinh;
+                    radioButton_Nu.Checked = !gioiTinh;
+                }
             };
         }
 
@@ -88,45 +92,66 @@ namespace Lab_08_StudnetMS
 
         }
 
-      
+
         private void button_ThemMoi_Click(object sender, EventArgs e)
         {
-            // 1. Kết thúc các thay đổi cũ nếu có
-            bs.EndEdit();
-
-            // 2. Thêm dòng mới (Các textbox sẽ tự động trống nhờ Binding)
-            bs.AddNew();
-
-            // 3. Di chuyển thanh cuộn của DataGridView xuống dòng cuối cùng
-            if (dataGridViewSinhVien.Rows.Count > 0)
+            try
             {
-                int newIndex = bs.Count - 1;
-                dataGridViewSinhVien.FirstDisplayedScrollingRowIndex = newIndex; // Cuộn tới dòng mới
-                dataGridViewSinhVien.Rows[newIndex].Selected = true; // Bôi xanh dòng mới
-                dataGridViewSinhVien.CurrentCell = dataGridViewSinhVien.Rows[newIndex].Cells[0]; // Đặt tiêu điểm
+                // 1. Kết thúc mọi chỉnh sửa
+                bs.EndEdit();
+
+                // 2. TẠM THỜI xóa binding của các controls
+                txtMaSoSinhVien.DataBindings.Clear();
+                txtHoTen.DataBindings.Clear();
+                dtp_NgaySinh.DataBindings.Clear();
+                radioButton_Nam.DataBindings.Clear();
+                txtDiaChi.DataBindings.Clear();
+                txtSoDienThoai.DataBindings.Clear();
+
+                // 3. Tạo dòng mới
+                bs.AddNew();
+
+                // 4. THIẾT LẬP LẠI BINDING
+                txtMaSoSinhVien.DataBindings.Add("Text", bs, "MaSo");
+                txtHoTen.DataBindings.Add("Text", bs, "HoTen");
+                dtp_NgaySinh.DataBindings.Add("Value", bs, "NgaySinh");
+                radioButton_Nam.DataBindings.Add("Checked", bs, "GioiTinh", true, DataSourceUpdateMode.OnPropertyChanged);
+                txtDiaChi.DataBindings.Add("Text", bs, "DiaChi");
+                txtSoDienThoai.DataBindings.Add("Text", bs, "DienThoai");
+
+                // 5. Cập nhật Grid
+                if (dataGridViewSinhVien.Rows.Count > 0)
+                {
+                    int newIndex = bs.Count - 1;
+                    dataGridViewSinhVien.FirstDisplayedScrollingRowIndex = newIndex;
+                    dataGridViewSinhVien.Rows[newIndex].Selected = true;
+                    dataGridViewSinhVien.CurrentCell = dataGridViewSinhVien.Rows[newIndex].Cells[0];
+                }
+
+                // 6. Focus vào TextBox đầu tiên
+                txtMaSoSinhVien.Focus();
             }
-
-            // 4. Thiết lập giá trị mặc định cho dòng mới (nếu cần) thông qua DataRow
-            DataRowView newRow = (DataRowView)bs.Current;
-            newRow["NgaySinh"] = DateTime.Now;
-            newRow["GioiTinh"] = true; // Mặc định là Nam
-
-            txtMaSoSinhVien.Focus();
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi thêm mới: " + ex.Message, "Lỗi");
+            }
         }
 
         private void button_Luu_Click(object sender, EventArgs e)
         {
             try
             {
-                // 1. Kết thúc việc chỉnh sửa
+                // Xác nhận dữ liệu từ các TextBox đã nạp vào dòng hiện tại của DataTable
+                this.Validate();
                 bs.EndEdit();
 
-                // 2. Sử dụng SQLCommandBuilder để tạo update
+                // Tự động sinh lệnh INSERT/UPDATE
                 SqlCommandBuilder builder = new SqlCommandBuilder(da);
 
-                // 3. Cập nhật thay đổi xuống Database
+                // Đẩy dữ liệu xuống SQL
                 da.Update(dtSinhVien);
-                MessageBox.Show("Đã lưu thành công!", "Thông báo");
+
+                MessageBox.Show("Đã lưu dữ liệu thành công!", "Thông báo");
             }
             catch (Exception ex)
             {
