@@ -56,7 +56,10 @@ namespace Lab_08_StudnetMS
             bs.PositionChanged += (s, e) =>
             {
                 DataRowView currentRow = (DataRowView)bs.Current;
-                bool gioiTinh = (bool)currentRow["GioiTinh"];
+                // Kiểm tra nếu cột GioiTinh là DBNull (thường gặp khi AddNew) thì mặc định là true (Nam)
+                object val = currentRow["GioiTinh"];
+                bool gioiTinh = (val == DBNull.Value) ? true : (bool)val;
+
                 radioButton_Nam.Checked = gioiTinh;
                 radioButton_Nu.Checked = !gioiTinh;
             };
@@ -82,7 +85,94 @@ namespace Lab_08_StudnetMS
 
         private void dataGridViewSinhVien_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-          
+
+        }
+
+      
+        private void button_ThemMoi_Click(object sender, EventArgs e)
+        {
+            // 1. Kết thúc các thay đổi cũ nếu có
+            bs.EndEdit();
+
+            // 2. Thêm dòng mới (Các textbox sẽ tự động trống nhờ Binding)
+            bs.AddNew();
+
+            // 3. Di chuyển thanh cuộn của DataGridView xuống dòng cuối cùng
+            if (dataGridViewSinhVien.Rows.Count > 0)
+            {
+                int newIndex = bs.Count - 1;
+                dataGridViewSinhVien.FirstDisplayedScrollingRowIndex = newIndex; // Cuộn tới dòng mới
+                dataGridViewSinhVien.Rows[newIndex].Selected = true; // Bôi xanh dòng mới
+                dataGridViewSinhVien.CurrentCell = dataGridViewSinhVien.Rows[newIndex].Cells[0]; // Đặt tiêu điểm
+            }
+
+            // 4. Thiết lập giá trị mặc định cho dòng mới (nếu cần) thông qua DataRow
+            DataRowView newRow = (DataRowView)bs.Current;
+            newRow["NgaySinh"] = DateTime.Now;
+            newRow["GioiTinh"] = true; // Mặc định là Nam
+
+            txtMaSoSinhVien.Focus();
+        }
+
+        private void button_Luu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // 1. Kết thúc việc chỉnh sửa
+                bs.EndEdit();
+
+                // 2. Sử dụng SQLCommandBuilder để tạo update
+                SqlCommandBuilder builder = new SqlCommandBuilder(da);
+
+                // 3. Cập nhật thay đổi xuống Database
+                da.Update(dtSinhVien);
+                MessageBox.Show("Đã lưu thành công!", "Thông báo");
+            }
+            catch (Exception ex)
+            {
+              
+                 MessageBox.Show("Lỗi CSDL: " + ex.Message);
+
+                // Nạp lại dữ liệu để xóa các dòng lỗi trên giao diện
+                dtSinhVien.Clear();
+                da.Fill(dtSinhVien);
+            }
+
+        }
+
+        private void button_Xoa_Click(object sender, EventArgs e)
+        {
+            // 1. Lấy thông tin sinh viên hiện tại đang chọn
+            DataRowView currentRow = (DataRowView)bs.Current;
+            string tenSV = currentRow["HoTen"].ToString();
+
+            // 2. Hiển thị hộp thoại xác nhận (Confirm)
+            DialogResult result = MessageBox.Show($"Bạn có chắc chắn muốn xóa sinh viên {tenSV} không?",
+                                                 "Xác nhận xóa",
+                                                 MessageBoxButtons.YesNo,
+                                                 MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    // 3. Xóa dòng khỏi BindingSource
+                    bs.RemoveCurrent();
+
+                    // 4. Cập nhật ngay lập tức xuống CSDL
+                    SqlCommandBuilder builder = new SqlCommandBuilder(da);
+                    da.Update(dtSinhVien);
+
+                    MessageBox.Show("Đã xóa sinh viên thành công!", "Thông báo");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi xóa: " + ex.Message, "Lỗi");
+                    // Nếu lỗi (vướng khóa ngoại), nạp lại dữ liệu để đồng bộ grid
+                    dtSinhVien.Clear();
+                    da.Fill(dtSinhVien);
+                }
+            }
         }
     }
 }

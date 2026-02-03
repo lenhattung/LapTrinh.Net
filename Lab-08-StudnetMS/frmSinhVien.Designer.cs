@@ -46,6 +46,9 @@
             radioButton_Nu = new RadioButton();
             radioButton_Nam = new RadioButton();
             comboBox_MaKhoa = new ComboBox();
+            button_ThemMoi = new Button();
+            button_Luu = new Button();
+            button_Xoa = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewSinhVien).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             gbGioiTinh.SuspendLayout();
@@ -195,11 +198,44 @@
             comboBox_MaKhoa.Size = new Size(214, 28);
             comboBox_MaKhoa.TabIndex = 17;
             // 
+            // button_ThemMoi
+            // 
+            button_ThemMoi.Location = new Point(709, 16);
+            button_ThemMoi.Name = "button_ThemMoi";
+            button_ThemMoi.Size = new Size(145, 40);
+            button_ThemMoi.TabIndex = 18;
+            button_ThemMoi.Text = "Thêm mới";
+            button_ThemMoi.UseVisualStyleBackColor = true;
+            button_ThemMoi.Click += button_ThemMoi_Click;
+            // 
+            // button_Luu
+            // 
+            button_Luu.Location = new Point(709, 65);
+            button_Luu.Name = "button_Luu";
+            button_Luu.Size = new Size(145, 40);
+            button_Luu.TabIndex = 19;
+            button_Luu.Text = "Lưu";
+            button_Luu.UseVisualStyleBackColor = true;
+            button_Luu.Click += button_Luu_Click;
+            // 
+            // button_Xoa
+            // 
+            button_Xoa.Location = new Point(709, 117);
+            button_Xoa.Name = "button_Xoa";
+            button_Xoa.Size = new Size(145, 40);
+            button_Xoa.TabIndex = 20;
+            button_Xoa.Text = "Xóa";
+            button_Xoa.UseVisualStyleBackColor = true;
+            button_Xoa.Click += button_Xoa_Click;
+            // 
             // frmSinhVien
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(905, 556);
+            Controls.Add(button_Xoa);
+            Controls.Add(button_Luu);
+            Controls.Add(button_ThemMoi);
             Controls.Add(comboBox_MaKhoa);
             Controls.Add(gbGioiTinh);
             Controls.Add(dtp_NgaySinh);
@@ -244,5 +280,8 @@
         private RadioButton radioButton_Nu;
         private RadioButton radioButton_Nam;
         private ComboBox comboBox_MaKhoa;
+        private Button button_ThemMoi;
+        private Button button_Luu;
+        private Button button_Xoa;
     }
 }
