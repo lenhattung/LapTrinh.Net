@@ -56,6 +56,7 @@ D:\Github\LapTrinh.Net\Lab-08-StudnetMS\bin\Debug\net8.0-windows\runtimes\win\li
 D:\Github\LapTrinh.Net\Lab-08-StudnetMS\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\Github\LapTrinh.Net\Lab-08-StudnetMS\obj\Debug\net8.0-windows\Lab-08-StudnetMS.csproj.AssemblyReference.cache
 D:\Github\LapTrinh.Net\Lab-08-StudnetMS\obj\Debug\net8.0-windows\Lab_08_StudnetMS.Form1.resources
+D:\Github\LapTrinh.Net\Lab-08-StudnetMS\obj\Debug\net8.0-windows\Lab_08_StudnetMS.frmSinhVien.resources
 D:\Github\LapTrinh.Net\Lab-08-StudnetMS\obj\Debug\net8.0-windows\Lab-08-StudnetMS.csproj.GenerateResource.cache
 D:\Github\LapTrinh.Net\Lab-08-StudnetMS\obj\Debug\net8.0-windows\Lab-08-StudnetMS.GeneratedMSBuildEditorConfig.editorconfig
 D:\Github\LapTrinh.Net\Lab-08-StudnetMS\obj\Debug\net8.0-windows\Lab-08-StudnetMS.AssemblyInfoInputs.cache
@@ -68,4 +69,3 @@ D:\Github\LapTrinh.Net\Lab-08-StudnetMS\obj\Debug\net8.0-windows\refint\Lab-08-S
 D:\Github\LapTrinh.Net\Lab-08-StudnetMS\obj\Debug\net8.0-windows\Lab-08-StudnetMS.pdb
 D:\Github\LapTrinh.Net\Lab-08-StudnetMS\obj\Debug\net8.0-windows\Lab-08-StudnetMS.genruntimeconfig.cache
 D:\Github\LapTrinh.Net\Lab-08-StudnetMS\obj\Debug\net8.0-windows\ref\Lab-08-StudnetMS.dll
-D:\Github\LapTrinh.Net\Lab-08-StudnetMS\obj\Debug\net8.0-windows\Lab_08_StudnetMS.frmSinhVien.resources
