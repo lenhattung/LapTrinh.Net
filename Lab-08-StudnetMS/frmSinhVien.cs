@@ -27,114 +27,82 @@ namespace Lab_08_StudnetMS
 
         private void frmSinhVien_Load(object sender, EventArgs e)
         {
-            // 1. Đọc dữ liệu từ SQL
-            da = new SqlDataAdapter("SELECT * FROM SinhVien", conn);
-            da.Fill(dtSinhVien);
-
-            // Lấy dữ liệu mã khoa
-            SqlDataAdapter daKhoa = new SqlDataAdapter("SELECT MaKhoa, TenKhoa FROM Khoa", conn);
-            daKhoa.Fill(dtKhoa);
-
-            // 2. Gán dữ liệu vào BingdingSource (vật trung gian)
-            bs.DataSource = dtSinhVien;
-
-            // 3. Liên kết BindingSource với DataGridView và Navigator
-            dataGridViewSinhVien.DataSource = bs;
-
-            // 4. Liên kết từng textbox với các cột tường ứng
-            txtMaSoSinhVien.DataBindings.Add("Text", bs, "MaSo");
-            txtHoTen.DataBindings.Add("Text", bs, "HoTen");
-            dtp_NgaySinh.DataBindings.Add("Value", bs, "NgaySinh");
-            radioButton_Nam.DataBindings.Add("Checked", bs, "GioiTinh", true, DataSourceUpdateMode.OnPropertyChanged);
-            txtDiaChi.DataBindings.Add("Text", bs, "DiaChi");
-            txtSoDienThoai.DataBindings.Add("Text", bs, "DienThoai");
-            // Thiết lập combobox
-            comboBox_MaKhoa.DataSource = dtKhoa;
-            comboBox_MaKhoa.DisplayMember = "TenKhoa";
-            comboBox_MaKhoa.ValueMember = "MaKhoa";
-
-            bs.PositionChanged += (s, e) =>
-            {
-                if (bs.Current != null)
-                {
-                    DataRowView currentRow = (DataRowView)bs.Current;
-
-                    // Kiểm tra nếu giá trị là DBNull (dòng mới chưa có dữ liệu) thì mặc định là true
-                    object val = currentRow["GioiTinh"];
-                    bool gioiTinh = (val == DBNull.Value) ? true : (bool)val;
-
-                    radioButton_Nam.Checked = gioiTinh;
-                    radioButton_Nu.Checked = !gioiTinh;
-                }
-            };
-        }
-
-        private void radioButton_Nam_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton_Nam.Focused)
-            {
-                DataRowView currentView = (DataRowView)bs.Current;
-                currentView["GioiTinh"] = radioButton_Nam.Checked;
-            }
-        }
-
-        private void radioButton_Nu_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton_Nu.Focused)
-            {
-                DataRowView currentView = (DataRowView)bs.Current;
-                currentView["GioiTinh"] = !radioButton_Nu.Checked;
-            }
-        }
-
-        private void dataGridViewSinhVien_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
-        {
-
-        }
-
-
-        private void button_ThemMoi_Click(object sender, EventArgs e)
-        {
             try
             {
-                // 1. Kết thúc mọi chỉnh sửa
-                bs.EndEdit();
+                // --- BƯỚC 1: Lấy dữ liệu Khoa đổ vào ComboBox ---
+                SqlDataAdapter daKhoa = new SqlDataAdapter("SELECT MaKhoa, TenKhoa FROM Khoa", conn);
+                daKhoa.Fill(dtKhoa);
 
-                // 2. TẠM THỜI xóa binding của các controls
+                comboBox_MaKhoa.DataSource = dtKhoa;
+                comboBox_MaKhoa.DisplayMember = "TenKhoa";
+                comboBox_MaKhoa.ValueMember = "MaKhoa";
+
+                // --- BƯỚC 2: Lấy dữ liệu Sinh Viên ---
+                da = new SqlDataAdapter("SELECT * FROM SinhVien", conn);
+
+                // QUAN TRỌNG: Dòng này tự động tạo lệnh INSERT, UPDATE, DELETE
+                SqlCommandBuilder builder = new SqlCommandBuilder(da);
+
+                da.Fill(dtSinhVien);
+
+                // --- BƯỚC 3: Thiết lập BindingSource ---
+                bs.DataSource = dtSinhVien;
+                dataGridViewSinhVien.DataSource = bs;
+
+                // --- BƯỚC 4: Binding dữ liệu vào các ô TextBox/Date/Combo ---
+                // Xóa binding cũ để tránh lỗi nếu hàm Load chạy lại (ít khi xảy ra nhưng an toàn)
                 txtMaSoSinhVien.DataBindings.Clear();
                 txtHoTen.DataBindings.Clear();
                 dtp_NgaySinh.DataBindings.Clear();
-                radioButton_Nam.DataBindings.Clear();
                 txtDiaChi.DataBindings.Clear();
                 txtSoDienThoai.DataBindings.Clear();
+                comboBox_MaKhoa.DataBindings.Clear();
+                radioButton_Nam.DataBindings.Clear();
 
-                // 3. Tạo dòng mới
-                bs.AddNew();
+                // Tham số: "Thuộc tính control", nguồn dữ liệu, "Tên cột trong SQL", format, update mode
+                txtMaSoSinhVien.DataBindings.Add("Text", bs, "MaSo", true);
+                txtHoTen.DataBindings.Add("Text", bs, "HoTen", true);
+                dtp_NgaySinh.DataBindings.Add("Value", bs, "NgaySinh", true);
+                txtDiaChi.DataBindings.Add("Text", bs, "DiaChi", true);
+                txtSoDienThoai.DataBindings.Add("Text", bs, "DienThoai", true);
 
-                // 4. THIẾT LẬP LẠI BINDING
-                txtMaSoSinhVien.DataBindings.Add("Text", bs, "MaSo");
-                txtHoTen.DataBindings.Add("Text", bs, "HoTen");
-                dtp_NgaySinh.DataBindings.Add("Value", bs, "NgaySinh");
+                // Binding ComboBox: Khi chọn grid, combo tự nhảy theo MaKhoa
+                comboBox_MaKhoa.DataBindings.Add("SelectedValue", bs, "MaKhoa", true, DataSourceUpdateMode.OnPropertyChanged);
+
+                // Binding RadioButton:
+                // Giả sử cột GioiTinh trong SQL là bit (True=Nam, False=Nữ)
+                // Ta chỉ cần bind cho nút Nam, nút Nữ sẽ tự đảo ngược bằng code sự kiện bên dưới
                 radioButton_Nam.DataBindings.Add("Checked", bs, "GioiTinh", true, DataSourceUpdateMode.OnPropertyChanged);
-                txtDiaChi.DataBindings.Add("Text", bs, "DiaChi");
-                txtSoDienThoai.DataBindings.Add("Text", bs, "DienThoai");
 
-                // 5. Cập nhật Grid
-                if (dataGridViewSinhVien.Rows.Count > 0)
-                {
-                    int newIndex = bs.Count - 1;
-                    dataGridViewSinhVien.FirstDisplayedScrollingRowIndex = newIndex;
-                    dataGridViewSinhVien.Rows[newIndex].Selected = true;
-                    dataGridViewSinhVien.CurrentCell = dataGridViewSinhVien.Rows[newIndex].Cells[0];
-                }
-
-                // 6. Focus vào TextBox đầu tiên
-                txtMaSoSinhVien.Focus();
+                // Logic hiển thị: Khi nút Nam thay đổi, nút Nữ sẽ ngược lại
+                radioButton_Nam.CheckedChanged += (s, args) => { radioButton_Nu.Checked = !radioButton_Nam.Checked; };
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi thêm mới: " + ex.Message, "Lỗi");
+                MessageBox.Show("Lỗi tải dữ liệu: " + ex.Message);
             }
+        }
+
+        // 1. Tạo dòng mới
+        private void button_ThemMoi_Click(object sender, EventArgs e)
+        {
+            // BindingSource hỗ trợ thêm mới cực nhanh
+            bs.AddNew();
+
+            // Thiết lập giá trị mặc định cho dòng mới (nếu cần)
+            if (bs.Current != null)
+            {
+                DataRowView currentRow = (DataRowView)bs.Current;
+                currentRow["GioiTinh"] = true; // Mặc định là Nam
+                currentRow["NgaySinh"] = DateTime.Now;
+                // Mặc định chọn khoa đầu tiên
+                if (dtKhoa.Rows.Count > 0)
+                    currentRow["MaKhoa"] = dtKhoa.Rows[0]["MaKhoa"];
+            }
+
+            // Đưa con trỏ về ô nhập liệu đầu tiên
+            bs.ResetCurrentItem();
+            txtMaSoSinhVien.Focus();
         }
 
         private void button_Luu_Click(object sender, EventArgs e)
@@ -167,6 +135,13 @@ namespace Lab_08_StudnetMS
 
         private void button_Xoa_Click(object sender, EventArgs e)
         {
+            // 0. Kiểm tra có sinh viên hay không
+            if (bs.Count == 0 || bs.Current == null)
+            {
+                MessageBox.Show("Không có sinh viên nào để xóa.");
+                return;
+            }
+
             // 1. Lấy thông tin sinh viên hiện tại đang chọn
             DataRowView currentRow = (DataRowView)bs.Current;
             string tenSV = currentRow["HoTen"].ToString();

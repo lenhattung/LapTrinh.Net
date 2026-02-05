@@ -62,7 +62,6 @@
             dataGridViewSinhVien.RowHeadersWidth = 51;
             dataGridViewSinhVien.Size = new Size(871, 326);
             dataGridViewSinhVien.TabIndex = 0;
-            dataGridViewSinhVien.CellFormatting += dataGridViewSinhVien_CellFormatting;
             // 
             // label1
             // 
@@ -176,7 +175,6 @@
             radioButton_Nu.TabStop = true;
             radioButton_Nu.Text = "Nữ";
             radioButton_Nu.UseVisualStyleBackColor = true;
-            radioButton_Nu.CheckedChanged += radioButton_Nu_CheckedChanged;
             // 
             // radioButton_Nam
             // 
@@ -188,7 +186,6 @@
             radioButton_Nam.TabStop = true;
             radioButton_Nam.Text = "Nam";
             radioButton_Nam.UseVisualStyleBackColor = true;
-            radioButton_Nam.CheckedChanged += radioButton_Nam_CheckedChanged;
             // 
             // comboBox_MaKhoa
             // 
