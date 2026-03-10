@@ -4008,9 +4008,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\LapTrinh.Net\\Lab08-QuanLySV\\Lab08-QuanLySV.csproj",
-      "projectName": "Lab08-QuanLySV",
-      "projectPath": "D:\\Github\\LapTrinh.Net\\Lab08-QuanLySV\\Lab08-QuanLySV.csproj",
+      "projectUniqueName": "D:\\Github\\LapTrinh.Net\\Lab08-QuanLySV\\Lab-08-QuanLySV.csproj",
+      "projectName": "Lab-08-QuanLySV",
+      "projectPath": "D:\\Github\\LapTrinh.Net\\Lab08-QuanLySV\\Lab-08-QuanLySV.csproj",
       "packagesPath": "C:\\Users\\tungi\\.nuget\\packages\\",
       "outputPath": "D:\\Github\\LapTrinh.Net\\Lab08-QuanLySV\\obj\\",
       "projectStyle": "PackageReference",

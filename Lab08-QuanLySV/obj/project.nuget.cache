@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A51hy0Bo/os=",
+  "dgSpecHash": "hGBF2IUHvs4=",
   "success": true,
-  "projectFilePath": "D:\\Github\\LapTrinh.Net\\Lab08-QuanLySV\\Lab08-QuanLySV.csproj",
+  "projectFilePath": "D:\\Github\\LapTrinh.Net\\Lab08-QuanLySV\\Lab-08-QuanLySV.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tungi\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\tungi\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
