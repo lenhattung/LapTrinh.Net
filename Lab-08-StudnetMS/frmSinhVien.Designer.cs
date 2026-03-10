@@ -30,7 +30,6 @@
         {
             components = new System.ComponentModel.Container();
             dataGridViewSinhVien = new DataGridView();
-            bindingSource1 = new BindingSource(components);
             label1 = new Label();
             txtMaSoSinhVien = new TextBox();
             txtHoTen = new TextBox();
@@ -49,9 +48,10 @@
             button_ThemMoi = new Button();
             button_Luu = new Button();
             button_Xoa = new Button();
+            bindingSource1 = new BindingSource(components);
             ((System.ComponentModel.ISupportInitialize)dataGridViewSinhVien).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             gbGioiTinh.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             SuspendLayout();
             // 
             // dataGridViewSinhVien
@@ -78,6 +78,7 @@
             txtMaSoSinhVien.Name = "txtMaSoSinhVien";
             txtMaSoSinhVien.Size = new Size(218, 27);
             txtMaSoSinhVien.TabIndex = 2;
+            txtMaSoSinhVien.TextChanged += txtMaSoSinhVien_TextChanged;
             // 
             // txtHoTen
             // 
@@ -225,6 +226,10 @@
             button_Xoa.UseVisualStyleBackColor = true;
             button_Xoa.Click += button_Xoa_Click;
             // 
+            // bindingSource1
+            // 
+            bindingSource1.CurrentChanged += bindingSource1_CurrentChanged;
+            // 
             // frmSinhVien
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -251,9 +256,9 @@
             Text = "frmSinhVien";
             Load += frmSinhVien_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridViewSinhVien).EndInit();
-            ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
             gbGioiTinh.ResumeLayout(false);
             gbGioiTinh.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -261,7 +266,6 @@
         #endregion
 
         private DataGridView dataGridViewSinhVien;
-        private BindingSource bindingSource1;
         private Label label1;
         private TextBox txtMaSoSinhVien;
         private TextBox txtHoTen;
@@ -280,5 +284,6 @@
         private Button button_ThemMoi;
         private Button button_Luu;
         private Button button_Xoa;
+        private BindingSource bindingSource1;
     }
 }

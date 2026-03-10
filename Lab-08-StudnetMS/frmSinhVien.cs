@@ -123,8 +123,8 @@ namespace Lab_08_StudnetMS
             }
             catch (Exception ex)
             {
-              
-                 MessageBox.Show("Lỗi CSDL: " + ex.Message);
+
+                MessageBox.Show("Lỗi CSDL: " + ex.Message);
 
                 // Nạp lại dữ liệu để xóa các dòng lỗi trên giao diện
                 dtSinhVien.Clear();
@@ -173,6 +173,16 @@ namespace Lab_08_StudnetMS
                     da.Fill(dtSinhVien);
                 }
             }
+        }
+
+        private void txtMaSoSinhVien_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
