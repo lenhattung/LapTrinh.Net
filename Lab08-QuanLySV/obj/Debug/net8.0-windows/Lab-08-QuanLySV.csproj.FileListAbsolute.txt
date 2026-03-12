@@ -122,3 +122,4 @@ D:\Github\LapTrinh.Net\Lab08-QuanLySV\obj\Debug\net8.0-windows\Lab-08-QuanLySV.p
 D:\Github\LapTrinh.Net\Lab08-QuanLySV\obj\Debug\net8.0-windows\Lab-08-QuanLySV.genruntimeconfig.cache
 D:\Github\LapTrinh.Net\Lab08-QuanLySV\obj\Debug\net8.0-windows\ref\Lab-08-QuanLySV.dll
 D:\Github\LapTrinh.Net\Lab08-QuanLySV\obj\Debug\net8.0-windows\Lab08_QuanLySV.Models.frmKhoa.resources
+D:\Github\LapTrinh.Net\Lab08-QuanLySV\obj\Debug\net8.0-windows\Lab08_QuanLySV.Models.frmMon.resources
