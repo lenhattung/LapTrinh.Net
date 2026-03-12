@@ -107,7 +107,6 @@ D:\Github\LapTrinh.Net\Lab08-QuanLySV\bin\Debug\net8.0-windows\runtimes\win-x64\
 D:\Github\LapTrinh.Net\Lab08-QuanLySV\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 D:\Github\LapTrinh.Net\Lab08-QuanLySV\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\Github\LapTrinh.Net\Lab08-QuanLySV\obj\Debug\net8.0-windows\Lab-08-QuanLySV.csproj.AssemblyReference.cache
-D:\Github\LapTrinh.Net\Lab08-QuanLySV\obj\Debug\net8.0-windows\Lab08_QuanLySV.Form1.resources
 D:\Github\LapTrinh.Net\Lab08-QuanLySV\obj\Debug\net8.0-windows\Lab08_QuanLySV.frmSinhVien.resources
 D:\Github\LapTrinh.Net\Lab08-QuanLySV\obj\Debug\net8.0-windows\Lab-08-QuanLySV.csproj.GenerateResource.cache
 D:\Github\LapTrinh.Net\Lab08-QuanLySV\obj\Debug\net8.0-windows\Lab-08-QuanLySV.GeneratedMSBuildEditorConfig.editorconfig
@@ -123,3 +122,6 @@ D:\Github\LapTrinh.Net\Lab08-QuanLySV\obj\Debug\net8.0-windows\Lab-08-QuanLySV.g
 D:\Github\LapTrinh.Net\Lab08-QuanLySV\obj\Debug\net8.0-windows\ref\Lab-08-QuanLySV.dll
 D:\Github\LapTrinh.Net\Lab08-QuanLySV\obj\Debug\net8.0-windows\Lab08_QuanLySV.Models.frmKhoa.resources
 D:\Github\LapTrinh.Net\Lab08-QuanLySV\obj\Debug\net8.0-windows\Lab08_QuanLySV.Models.frmMon.resources
+D:\Github\LapTrinh.Net\Lab08-QuanLySV\obj\Debug\net8.0-windows\Lab08_QuanLySV.Models.frmKetQua.resources
+D:\Github\LapTrinh.Net\Lab08-QuanLySV\obj\Debug\net8.0-windows\Lab08_QuanLySV.Models.frmNhapDiem.resources
+D:\Github\LapTrinh.Net\Lab08-QuanLySV\obj\Debug\net8.0-windows\Lab08_QuanLySV.Models.frmMain.resources
